@@ -1,0 +1,31 @@
+@import "themes/themeVariables.scss";
+
+.weather-info-container {
+  padding-left: 24px;
+
+  .location-text {
+    color: $grey;
+    font-size: $font-size-sm;
+  }
+
+  .weather-text {
+    font-size: $font-size-xxl;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+
+  .weather-details-content-container {
+    display: flex;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    margin-right: 8px;
+    line-height: 1.5;
+
+    .weather-info-title {
+      color: $grey;
+      width: 140px;
+    }
+  }
+}

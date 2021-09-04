@@ -1,0 +1,41 @@
+@import "themes/themeVariables.scss";
+
+.search-history-row-container {
+
+  .search-history-data-row-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid lighten($grey, 20%);
+    padding-bottom: 8px;
+    margin-top: 18px;
+  }
+
+  .data-row-action-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .data-row-button {
+    text-align: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: $secondary-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparentize($secondary-color, 0.2);
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    > svg {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "themes/themeVariables.scss";
+
+.weather-search-form-container {
+  display: flex;
+  align-items: center;
+  gap: 16px 8px;
+  flex-wrap: wrap;
+
+  .form-action-group {
+    display: flex;
+    gap: 8px;
+
+    > button {
+      height: 28px;
+      background-color: $secondary-color;
+      border-radius: $border-size;
+      border: 1px solid $grey;
+      outline: none;
+      cursor: pointer;
+
+      &:disabled {
+        border: 1px solid lighten($grey, 20%);
+        cursor: not-allowed;
+      }
+    }
+
+    > button:not(:disabled) {
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: transparentize($secondary-color, 0.2);
+        transition: background-color 0.2s ease-in-out;
+      }
+    }
+  }
+}

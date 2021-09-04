@@ -1,0 +1,37 @@
+@import "themes/themeVariables.scss";
+
+.weather-search-field-container {
+  display: flex;
+  align-items: center;
+
+  .weather-search-field-name {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+
+  .weather-search-field-input {
+    font-size: $font-size-sm;
+    height: 28px;
+    width: 200px;
+    border-radius: $border-size;
+    border: 1px solid $grey;
+    background-color: $secondary-color;
+    outline: none;
+    padding: 0 8px;
+
+    &:focus,
+    &:active,
+    &:hover {
+      border: 1px solid $accent-color;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+
+    .weather-search-field-input {
+      flex: 1;
+    }
+  }
+}
