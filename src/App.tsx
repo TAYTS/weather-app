@@ -5,6 +5,7 @@ import configureStore from 'store/configureStore';
 import Layout from 'containers/Layout';
 import Routers from 'components/Routers';
 import 'App.scss';
+import { BrowserRouter } from 'react-router-dom';
 
 const initialState = {};
 const store = configureStore(initialState);
@@ -13,7 +14,9 @@ const App: React.FC = () => {
   return (
     <Provider store={store}>
       <Layout>
-        <Routers />
+        <BrowserRouter>
+          <Routers />
+        </BrowserRouter>
       </Layout>
     </Provider>
   );

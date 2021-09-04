@@ -1,8 +1,14 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
+import WeatherPage from 'containers/WeatherPage';
 
 const Routers: React.FC = () => {
-  return <Switch />;
+  return (
+    <Switch>
+      <Route path="/" component={WeatherPage} />
+    </Switch>
+  );
 };
 
 export default Routers;
