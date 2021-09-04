@@ -14,7 +14,7 @@ const buildHeader = (headers: Headers): Headers => {
 };
 
 const request = <T>(props: RequestProps, method: Method): AxiosPromise<T> => {
-  const { url, withCredentials, headers, query, body, cancelToken, responseType } = props;
+  const { url, withCredentials, headers, query, body, cancelToken, responseType, params } = props;
 
   const strQuery = queryString.stringify(query || {}, { encode: true });
 
@@ -23,6 +23,7 @@ const request = <T>(props: RequestProps, method: Method): AxiosPromise<T> => {
   const axiosOptions: AxiosRequestConfig = {
     url: apiURL,
     method,
+    params,
     withCredentials,
     headers: buildHeader(headers),
     data: body,
