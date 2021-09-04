@@ -1,0 +1,11 @@
+@import "themes/themeVariables.scss";
+
+.header-container {
+  margin-bottom: 12px;
+
+  .header-title {
+    border-bottom: 2px solid $grey;
+    margin: 0;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,12 @@
+@import "themes/themeVariables.scss";
+
+.error-message-container {
+  padding: 8px 12px;
+  background-color: lighten($red, 20%);
+  border: 1px solid $red;
+  border-radius: $border-size;
+
+  .error-message-text {
+    font-size: $font-size-sm;
+  }
+}
