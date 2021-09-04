@@ -5,7 +5,7 @@ import 'containers/WeatherPage/components/WeatherInfo/index.scss';
 import { WeatherInfoProps } from 'containers/WeatherPage/components/WeatherInfo/types';
 
 const renderWeatherInfoDetails = (weatherInfo: { title: string; description: string }[]) =>
-  weatherInfo.map((info, index) => (
+  weatherInfo.map((info) => (
     <div key={info.title} className="weather-details-content-container">
       <p className="weather-info-title">{info.title}:</p>
       <p className="weather-info-description">{info.description}</p>
