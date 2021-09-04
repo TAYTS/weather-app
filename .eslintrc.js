@@ -21,7 +21,6 @@ module.exports = {
     'prettier/prettier': ['error'],
     'space-in-parens': [0, 'always'],
     'object-curly-spacing': [2, 'always'],
-    'computed-property-spacing': [2, 'always'],
     'import/no-named-as-default': 0,
     'import/prefer-default-export': 0,
     'import/order': 0,
